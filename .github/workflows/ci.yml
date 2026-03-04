@@ -26,4 +26,4 @@ jobs:
         run: npx playwright install
 
       - name: Run login test
-        run: npx playwright test tests/login/negative.spec.js --project=chromium
+        run: npx playwright test tests/login --project=chromium
