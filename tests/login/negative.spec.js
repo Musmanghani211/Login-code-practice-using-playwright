@@ -51,7 +51,7 @@ test('verify the user is unable to login with locked out user', async({page})=>{
     await page.fill('#user-name', 'locked_out_user');
     await page.fill('#password', 'secret_sauce');
     await page.click('#login-button');
-    await expect(page.locator('[data-test="error"]')).toContainText('Sorry, this user has been locked ou');
+    await expect(page.locator('[data-test="error"]')).toContainText('abcdef');
 });
 
 test('verify the user is unable to login with incorrect credentials', async({page})=>{
