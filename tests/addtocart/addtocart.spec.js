@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {login} from '../login/possitive.js';
+import {login} from '../login/possitive. helper.js';
 test.use({ storageState: 'auth/userSession.json' });
 
 test ('verify the count on cart icon', async ({page}) => {
